@@ -13,6 +13,7 @@ To prepare datasets before model training, run
 ```
 python3 getDatasets.py
 ```
+Theoretically, you don't have to modify any path for datasets or folders throughout model training. 
 
 ## DCFOD 
 To obtain DCFOD's performance on a speicifc dataset, run
@@ -23,7 +24,9 @@ i.e.,
 
 python3 train.py student 0 true
 ```
-for `GPU_index`, if there's only one GPU, simply type `0`, if there are more than one, and you want to train on the i-th GPU, the index shall be i-1. 
+`GPU_index` indicates the i-1 th GPU you want to train on. If you only have one, simply type 0.
+
+To obtain the results for derivative **DCOD**, change the `kf` hyperparameter value to 0 in the `train` method.
 
 ### Competitive method: FairLOF
 FairLOF requires the baseline result of LOF, you should first run
