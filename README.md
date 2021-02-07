@@ -80,8 +80,8 @@ python3 Retriever.py *dataset_name*
 ```
 
 ### Numerical Evaluation
-We use *AUC* to measure detection validity, and *Fgap*, *Frank* to measure two types of fairness degree. 
+We use *AUC* to measure detection validity, and propose *Fgap*, *Frank* to measure two types of fairness degree. 
 
-We calculate *AUC* with `roc_auc_score` from `sklearn.metrics`, and define *Fgap*, *Frank* in `Retriever.py`.
+We calculate *AUC* with `roc_auc_score` from `sklearn.metrics`, and implement *Fgap*, *Frank* in `Retriever.py`.
 
 During model training, we obtain the fairness metrics with the *fetch* method in `Retriever.py`.
