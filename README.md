@@ -54,7 +54,7 @@ then run
 ```
 python3 FairLOF.py *dataset_name*
 ```
-the experiment run on 4 GPUs, you can tweak line 21-25 in `FairLOF.py` to modify cuda and the associated GPUs.
+the experiment runs on 4 GPUs, you can tweak line 21-25 in `FairLOF.py` to modify cuda and the associated GPU settings.
 
 ### Competitive Method: FairOD
 We run FairOD with
