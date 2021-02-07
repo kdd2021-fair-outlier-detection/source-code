@@ -37,7 +37,7 @@ python3 train.py student 0 true
 
 To obtain the results for derivative **DCOD**, change the `kf` hyperparameter value to 0 in the *train* method.
 
-### Competitive Method: FairLOF
+### Competitive Method: [FairLOF](https://arxiv.org/abs/2005.09900)
 FairLOF requires the baseline result of LOF, you should first run
 ```
 python3 LOF.py *dataset_name*
@@ -56,7 +56,7 @@ python3 FairLOF.py *dataset_name*
 ```
 the experiment runs on 4 GPUs, you can tweak line 21-25 in `FairLOF.py` to modify cuda and the associated GPU settings.
 
-### Competitive Method: FairOD
+### Competitive Method: [FairOD](https://arxiv.org/abs/2012.03063)
 We run FairOD with
 ```
 python3 FairOD.py *dataset_name* *GPU_index* *fair_command*
@@ -69,7 +69,7 @@ then train the fair model
 ```
 python3 FairOD.py student 0 t 
 ```
-### Competitive Method: Conventional Outlier Detectors
+### Competitive Method: [Conventional Outlier Detectors](https://pyod.readthedocs.io/en/latest/index.html)
 To save methods' outlier scores and obtain the evaluation metrics' values on a specific dataset, run
 ```
 python3 pyod_results.py *dataset_name*
