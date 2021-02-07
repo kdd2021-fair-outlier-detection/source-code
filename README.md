@@ -70,11 +70,11 @@ then train the fair model
 python3 FairOD.py student 0 t 
 ```
 ### Competitive Method: Conventional Outlier Detectors
-To save methods' outlier scores and obtain metrics' values on a specific dataset, run
+To save methods' outlier scores and obtain the evaluation metrics' values on a specific dataset, run
 ```
 python3 pyod_results.py *dataset_name*
 ```
-Or, if you already ran the above command, which has saved outlier scores, and you want to re-obtain the metrics' values, simply run
+Or, if you already ran the above command, which has saved outlier scores for a specific dataset, and you want to re-obtain the metrics' values, simply run
 ```
 python3 Retriever.py *dataset_name*
 ```
