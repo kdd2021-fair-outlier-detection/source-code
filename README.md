@@ -37,6 +37,16 @@ python3 train.py student 0 true
 
 To obtain the results for derivative **DCOD**, change the `kf` hyperparameter value to 0 in the *train* method.
 
+## Parameter Setting
+```
+Self-reconstruction hyperparameter = 8
+Fairness-adversarial hyperparameter = 100
+Epoch = 90 or 40 if sample size > 10,000
+Batch_size = 64 or 256 if sample size > 10,000
+Dimension of embedded space = 64
+Centroid Number = 10
+```
+
 ### Competitive Method: [FairLOF](https://arxiv.org/abs/2005.09900)
 FairLOF requires the baseline result of LOF, you should first run
 ```
